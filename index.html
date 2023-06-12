@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <p>Please fill out this form with required information</p>
+        <form action="https://www.cristalintercon.com" method="post">
+          <fieldset>
+            <label for="first-name">First Name: <input id="first-name" type="text" required name="first-name"/></label>
+            <label for="last-name">Last Name: <input id="last-name" type="text" required name="last-name"/></label>
+            <label for="email">Email: <input id="email" type="email" required name="email"/></label>
+            <label for="new-password">Password: <input id="new-password" type="password" pattern="[a-z0-5]{8,}" required name="password"/></label>
+          </fieldset>
+          <fieldset>
+            <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline"/> Personal Account</label>
+            <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline"/> Business Account</label>
+            <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required class="inline"/> I accept the <a href="https://www.cristalintercon.com/terms-and-conditions/">terms and conditions</label>
+          </fieldset>
+          <fieldset>
+            <label for="profile-pictire">Upload a profile picture:<input id="profile-pictire" type="file" name="profile-pictire"/></label>
+            <label for="age">Input your age(Years):<input id="age" type="number" min="10" max="120" name="age"/></label>
+            <label for="referrer">How did you hear about us?
+            <select id="referrer" name="referrer">
+                <option>(Select one)</option>
+                <option>Magazine</option>
+                <option>Youtube</option>
+                <option>Family and Friends</option>
+                <option>Others</option>
+            </select>
+        </label>
+         <label for="bio">Provide a bio:<textarea id="bio" rows="3" cols="30" placeholder="I like coding on the beach..." name="bio"></textarea></label>
+          </fieldset>
+          <input type="submit" value="Submit">
+        </form>
+    </body>
+
+</html>
